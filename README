@@ -159,7 +159,7 @@ Indicates to the code that the RepeatMasker output file passed in the --rm optio
 
 This option enables the code to retrieve fasta sequences corresponding to the TE copies generated in output. Fasta sequences are identified in the RepeatMasker output by column 4, the scaffold name, which should be identical to the sequence name in the fasta files (e.g. >chr2L). This option can be used in various ways:
 --fasta looks for .fa files next to the .rm files passed to the --rm argument (it can search recursively into directories).
---fasta filename only look for fasta sequences in filename (filename must have a .fa extension, not to be confused with the .fasta outputs of one_code_to_find_them_all.pl)
+--fasta filename only look for fasta sequences in filename
 --fasta directory search recursively for all .fa files in the directory and its subdirectories.
 
 This option outputs one file per contig in the RepeatMasker outptut. When copies are assembled form fragments, the fasta sequence given in output is the concatenation of the fragments, whose coordinates are reported in the sequence name.
